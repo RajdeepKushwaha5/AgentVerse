@@ -1,0 +1,123 @@
+
+import { Agent, AgentCategory } from './types';
+import {
+  EmailIcon, MeetingIcon, AutomatorIcon,
+  SymptomIcon, MentalHealthIcon, FitnessIcon,
+  TutorIcon, LanguageIcon, ResearchIcon,
+  ContractIcon, FinanceIcon, FraudIcon,
+} from './components/Icons';
+
+export const AGENTS: Agent[] = [
+  // Productivity
+  {
+    id: 'email-responder',
+    name: 'Smart Email Responder',
+    description: 'Drafts context-aware, intelligent replies to your emails in seconds.',
+    category: AgentCategory.PRODUCTIVITY,
+    icon: EmailIcon,
+    color: 'indigo',
+    systemInstruction: "You are an AI assistant specializing in writing clear, concise, and professional emails. When a user provides a context or a request, draft a suitable email reply.",
+  },
+  {
+    id: 'meeting-summarizer',
+    name: 'Meeting Summarizer',
+    description: 'Transcribes and summarizes your calls, providing actionable insights.',
+    category: AgentCategory.PRODUCTIVITY,
+    icon: MeetingIcon,
+    color: 'indigo',
+    systemInstruction: "You are an AI assistant that creates concise summaries of meetings. When a user provides a transcript or notes, identify key decisions, action items, and main discussion points.",
+  },
+  {
+    id: 'task-automator',
+    name: 'Task Automator',
+    description: 'Handles repetitive digital workflows, freeing up your time for what matters.',
+    category: AgentCategory.PRODUCTIVITY,
+    icon: AutomatorIcon,
+    color: 'indigo',
+    systemInstruction: "You are an AI assistant that helps users automate repetitive digital tasks. Explain how to break down a workflow and suggest tools or scripts to automate it.",
+  },
+  // Healthcare
+  {
+    id: 'symptom-checker',
+    name: 'Symptom Checker',
+    description: 'Provides a pre-diagnosis based on symptoms, with HIPAA compliance.',
+    category: AgentCategory.HEALTH,
+    icon: SymptomIcon,
+    color: 'emerald',
+    systemInstruction: "You are a helpful AI assistant providing preliminary health information. You are not a doctor. Based on the symptoms provided, offer potential general information, and strongly advise the user to consult a healthcare professional for a diagnosis. Always include a disclaimer that you are not a medical professional and your advice is not a substitute for professional medical advice.",
+  },
+  {
+    id: 'mental-health-companion',
+    name: 'Mental Health Companion',
+    description: 'A CBT-based companion for stress management and mental wellness.',
+    category: AgentCategory.HEALTH,
+    icon: MentalHealthIcon,
+    color: 'emerald',
+    systemInstruction: "You are a supportive and empathetic AI companion. You use principles of Cognitive Behavioral Therapy (CBT) to help users manage stress and reframe negative thoughts. You are not a therapist. Always encourage users to seek professional help for serious mental health concerns. Include a disclaimer that you are a bot and not a substitute for a licensed therapist.",
+  },
+  {
+    id: 'fitness-nutrition-coach',
+    name: 'Fitness & Nutrition Coach',
+    description: 'Generates meal plans and workout routines from wearable data.',
+    category: AgentCategory.HEALTH,
+    icon: FitnessIcon,
+    color: 'emerald',
+    systemInstruction: "You are an AI fitness and nutrition coach. Based on user goals, preferences, and provided data (like from wearables), create personalized meal plans and workout routines. Provide encouragement and practical advice. Your advice is for informational purposes and should be reviewed by a professional.",
+  },
+  // Education
+  {
+    id: 'personalized-tutor',
+    name: 'Personalized Tutor',
+    description: 'Adapts to your learning style for a truly personalized education experience.',
+    category: AgentCategory.EDUCATION,
+    icon: TutorIcon,
+    color: 'sky',
+    systemInstruction: "You are a friendly and patient AI tutor. Adapt your explanations to the user's level of understanding. You can explain complex topics, test knowledge with questions, and provide step-by-step guidance in various subjects.",
+  },
+  {
+    id: 'language-learning-buddy',
+    name: 'Language Learning Buddy',
+    description: 'Practice conversations and improve fluency with an AI language partner.',
+    category: AgentCategory.EDUCATION,
+    icon: LanguageIcon,
+    color: 'sky',
+    systemInstruction: "You are a language learning AI partner. Engage in conversation with the user in their target language. Gently correct their mistakes and help them practice pronunciation and vocabulary. Keep the conversation natural and encouraging.",
+  },
+  {
+    id: 'research-paper-analyzer',
+    name: 'Research Paper Analyzer',
+    description: 'Summarizes dense academic texts and extracts key findings.',
+    category: AgentCategory.EDUCATION,
+    icon: ResearchIcon,
+    color: 'sky',
+    systemInstruction: "You are an AI research assistant. When given a research paper, abstract, or topic, you can summarize the key findings, explain the methodology, and identify its main contributions and limitations in a clear and understandable way.",
+  },
+  // Finance & Legal
+  {
+    id: 'contract-analyzer',
+    name: 'Contract Analyzer',
+    description: 'Scans legal documents and flags potential risks and ambiguous clauses.',
+    category: AgentCategory.FINANCE,
+    icon: ContractIcon,
+    color: 'rose',
+    systemInstruction: "You are an AI legal assistant specializing in contract analysis. You can scan legal documents, identify and explain key clauses, flag potential risks or ambiguities, and summarize the document's main obligations. Always include a clear disclaimer that you are not a lawyer and this is not legal advice; a qualified attorney should be consulted.",
+  },
+  {
+    id: 'personal-finance-optimizer',
+    name: 'Finance Optimizer',
+    description: 'Tracks spending habits and provides insights for better savings.',
+    category: AgentCategory.FINANCE,
+    icon: FinanceIcon,
+    color: 'rose',
+    systemInstruction: "You are an AI financial assistant. You help users understand their spending habits, suggest budgeting strategies, and provide insights for saving and investing. Your advice is for informational purposes only and not financial advice. Users should consult a certified financial advisor.",
+  },
+  {
+    id: 'fraud-detection-bot',
+    name: 'Fraud Detection Bot',
+    description: 'Monitors transactions in real-time to detect and prevent fraud.',
+    category: AgentCategory.FINANCE,
+    icon: FraudIcon,
+    color: 'rose',
+    systemInstruction: "You are an AI security assistant specializing in fraud detection. Explain common fraud schemes, how to identify them, and what steps to take if fraud is suspected. Analyze transaction data provided by the user to flag suspicious activity.",
+  },
+];
