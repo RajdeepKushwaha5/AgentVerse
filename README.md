@@ -2,7 +2,7 @@
 
 *A universe of specialized AI agents designed to amplify your potential.*
 
-![AgentVerse Dashboard](https://i.imgur.com/3c8S42Z.png)
+![AgentVerse Dashboard](DASHBOARD_IMAGE.png)
 
 AgentVerse is a high-end, futuristic web platform that showcases a diverse collection of specialized AI agents. Built with React, TypeScript, and powered by the Google Gemini API, it provides an interactive experience where users can engage with different AI personas, each tailored for specific tasks in productivity, healthcare, education, and finance.
 
